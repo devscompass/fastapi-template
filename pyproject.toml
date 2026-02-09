@@ -12,7 +12,7 @@ dependencies = ["fastapi[standard]", "alembic", "asyncpg", "pydantic-settings"]
 dev = [
     "pytest",
     "pytest-asyncio",
-    "testcontainers[postgresql]",
+    "testcontainers[postgres]",
     "build",
     "ruff",
     "mypy",
