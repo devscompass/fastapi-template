@@ -1,5 +1,5 @@
 # build stage
-FROM docker.io/library/python:3.14-slim as build
+FROM docker.io/library/python:3.14-slim AS build
 ARG REVISION
 WORKDIR /opt/app
 ENV SETUPTOOLS_SCM_PRETEND_VERSION=${REVISION} \
@@ -20,9 +20,9 @@ FROM docker.io/library/python:3.14-slim
 ARG REVISION
 LABEL org.opencontainers.image.title="FastAPI Template"
 LABEL org.opencontainers.image.description="FastAPI Template"
-LABEL org.opencontainers.image.source="https://github.com/zbhavyai/fastapi-template"
+LABEL org.opencontainers.image.source="https://github.com/devscompass/fastapi-template"
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.authors="Bhavyai Gupta <https://zbhavyai.github.io>"
+LABEL org.opencontainers.image.authors="Devs Compass"
 LABEL org.opencontainers.image.version="${REVISION}"
 WORKDIR /opt/app
 ENV SETUPTOOLS_SCM_PRETEND_VERSION=${REVISION} \
