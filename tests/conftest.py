@@ -25,7 +25,7 @@ from app.models.note_model import Note
 @pytest.fixture(scope="session")
 def postgres_container() -> Generator[PostgresContainer]:
     container = PostgresContainer(
-        "docker.io/library/postgres:17.0",
+        "docker.io/library/postgres:18",
         username="appuser",
         password="apppass",
         dbname="appdb",
