@@ -1,8 +1,8 @@
 # FastAPI Template
 
-![Build](https://img.shields.io/github/actions/workflow/status/zbhavyai/fastapi-template/build.yml?label=Build)
-![Release](https://img.shields.io/github/actions/workflow/status/zbhavyai/fastapi-template/release.yml?label=Release)
-![License](https://img.shields.io/github/license/zbhavyai/fastapi-template?label=License)
+[![Build](https://img.shields.io/github/actions/workflow/status/devscompass/fastapi-template/build.yml?label=Build)](https://github.com/devscompass/fastapi-template/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/actions/workflow/status/devscompass/fastapi-template/release.yml?label=Release)](https://github.com/devscompass/fastapi-template/actions/workflows/release.yml)
+[![License](https://img.shields.io/github/license/devscompass/fastapi-template?label=License)](https://github.com/devscompass/fastapi-template/blob/main/LICENSE)
 
 A **starter template** for building backend applications with [FastAPI](https://fastapi.tiangolo.com/), the high-performance Python web framework.
 
