@@ -1,3 +1,4 @@
+import logging
 from pathlib import Path
 
 from pydantic_settings import BaseSettings
@@ -7,7 +8,7 @@ class Settings(BaseSettings):
     # -------------------------------------------------------------------------
     # LOGGING
     # -------------------------------------------------------------------------
-    log_level: str = "INFO"
+    log_level: int = logging.INFO
     log_file: Path = Path.home() / ".fastapitemplate" / "app.log"
     log_file_max_size: int = 25 * 1024 * 1024
     log_file_backup_count: int = 7
