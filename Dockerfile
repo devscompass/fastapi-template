@@ -9,7 +9,7 @@ ENV SETUPTOOLS_SCM_PRETEND_VERSION=${REVISION} \
     PATH="/opt/app/.venv/bin:$PATH" \
     UV_COMPILE_BYTECODE=1 \
     UV_LINK_MODE=copy
-COPY --from=ghcr.io/astral-sh/uv:0.9 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.11 /uv /uvx /bin/
 COPY pyproject.toml uv.lock README.md LICENSE alembic.ini ./
 COPY app ./app
 COPY migrations ./migrations

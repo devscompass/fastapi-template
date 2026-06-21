@@ -11,6 +11,7 @@
     "ms-python.vscode-python-envs",
     "redhat.vscode-xml",
     "redhat.vscode-yaml",
-    "renesaarsoo.sql-formatter-vsc"
+    "renesaarsoo.sql-formatter-vsc",
+    "tamasfe.even-better-toml"
   ]
 }

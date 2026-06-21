@@ -14,7 +14,6 @@ from app.core.settings import settings
 
 
 def configure_logging() -> None:
-    level = getattr(logging, settings.log_level.upper())
     handlers: list[logging.Handler] = [logging.StreamHandler()]
 
     if settings.log_file:
@@ -31,7 +30,7 @@ def configure_logging() -> None:
         handlers.append(file_handler)
 
     logging.basicConfig(
-        level=level,
+        level=settings.log_level,
         format=settings.log_format,
         handlers=handlers,
     )
