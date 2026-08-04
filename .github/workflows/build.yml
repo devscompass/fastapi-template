@@ -37,7 +37,7 @@ jobs:
           echo "REVISION=${VERSION}" >> "${GITHUB_ENV}"
 
       - name: Set up python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version-file: "pyproject.toml"
 
@@ -78,7 +78,7 @@ jobs:
           echo "REVISION=${VERSION}" >> "${GITHUB_ENV}"
 
       - name: Set up python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version-file: "pyproject.toml"
 
@@ -121,7 +121,7 @@ jobs:
           echo "REVISION=${VERSION}" >> "${GITHUB_ENV}"
 
       - name: Set up python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version-file: "pyproject.toml"
 
